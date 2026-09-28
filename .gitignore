@@ -1,6 +1,0 @@
-# Ignore the build output directory and all contained compiled artifacts
-build/
-
-# Ignore local tool settings and run logs
-modelsim.ini
-transcript
