@@ -1,0 +1,42 @@
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# ** Warning: (vsim-222) -modelsimini will be deprecated in future releases. Please use -ini instead.
+# vsim -modelsimini D:/github/project/syscon_if/sim/vunit_out/modelsim/modelsim.ini -wlf D:/github/project/syscon_if/sim/vunit_out/test_output/lib.syscon_if_driver_task_tb.test_enable_clock_d51c5a1a3f37c556629f7ff0f6b57f4c810bb7aa/modelsim/vsim.wlf -quiet -t 1ps -onfinish stop lib.syscon_if_driver_task_tb -L vunit_lib -L lib -g/syscon_if_driver_task_tb/runner_cfg="active python runner : true,enabled_test_cases : test_enable_clock,output path : D::/github/project/syscon_if/sim/vunit_out/test_output/lib.syscon_if_driver_task_tb.test_enable_clock_d51c5a1a3f37c556629f7ff0f6b57f4c810bb7aa/,tb path : D::/github/project/syscon_if/tb/,use_color : true" 
+# Start time: 22:38:31 on Oct 01,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-220) 'D:/github/project/syscon_if/sim/vunit_out/modelsim/modelsim.ini' is used as the ini file.
+# //  Questa Altera Starter FPGA Edition-64
+# //  Version 2025.2 win64 May 31 2025
+# //
+# // Unpublished work. Copyright 2025 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+# ** Error: CHECK_EQUAL failed! Got syscon_src.clk_en=1 expected 0. Source modport failed to disable clock
+#    Time: 0 ps  Scope: syscon_if_driver_task_tb File: D:/github/project/syscon_if/tb/syscon_if_driver_task_tb.sv Line: 22
+# Break at D:/github/project/syscon_if/tb/syscon_if_driver_task_tb.sv line 22
+# Stopped at D:/github/project/syscon_if/tb/syscon_if_driver_task_tb.sv line 22
+# 
+# Test Run Failed!
+# 
+# Stack trace result from 'tb' command
+#  D:/github/project/syscon_if/tb/syscon_if_driver_task_tb.sv 22 return [address 0x7ff4f612ae83]  
+# 
+# 
+# Surrounding code from 'see' command
+#   17 :         `TEST_CASE("test_enable_clock") begin
+#   18 :             `CHECK_EQUAL(syscon_src.clk_en, 1'b0, "Source modport not initial with 0");
+#   19 :             syscon_src.enable_clock();
+#   20 :             `CHECK_EQUAL(syscon_src.clk_en, 1'b1, "Source modport failed to enable clock");
+#   21 :             syscon_src.disable_clock();
+# ->22 :             `CHECK_EQUAL(syscon_src.clk_en, 1'b0, "Source modport failed to disable clock");
+#   23 :         end
+#   24 :     end
+#   25 : endmodule : syscon_if_driver_task_tb
+# 

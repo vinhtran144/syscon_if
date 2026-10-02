@@ -1,0 +1,10 @@
+# End time: 22:41:59 on Oct 01,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 1
+# ** Note: (vsim-220) 'modelsim.ini' is used as the ini file.
+# ** Warning: (vsim-222) -modelsimini will be deprecated in future releases. Please use -ini instead.
+# vsim -modelsimini D:/github/project/syscon_if/sim/vunit_out/modelsim/modelsim.ini -wlf D:/github/project/syscon_if/sim/vunit_out/test_output/lib.syscon_if_driver_task_tb.enable_clock_4428ce95306654a49c9972f474d595a46ff8d21e/modelsim/vsim.wlf -quiet -t 1ps -onfinish stop lib.syscon_if_driver_task_tb -L vunit_lib -L lib -g/syscon_if_driver_task_tb/runner_cfg="active python runner : true,enabled_test_cases : enable_clock,output path : D::/github/project/syscon_if/sim/vunit_out/test_output/lib.syscon_if_driver_task_tb.enable_clock_4428ce95306654a49c9972f474d595a46ff8d21e/,tb path : D::/github/project/syscon_if/tb/,use_color : true" 
+# Start time: 22:41:59 on Oct 01,2026
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Note: (vopt-220) 'D:/github/project/syscon_if/sim/vunit_out/modelsim/modelsim.ini' is used as the ini file.
+# Break in Function vunit_pkg/test_runner::cleanup at C:/Users/Vinh Tran/AppData/Local/Python/pythoncore-3.14-64/Lib/site-packages/vunit/verilog/vunit_pkg.sv line 138
+# Stopped at C:/Users/Vinh Tran/AppData/Local/Python/pythoncore-3.14-64/Lib/site-packages/vunit/verilog/vunit_pkg.sv line 138

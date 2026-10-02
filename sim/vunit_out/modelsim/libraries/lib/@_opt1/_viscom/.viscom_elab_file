@@ -1,0 +1,1 @@
+C:/altera_lite/25.1std/questa_fse/win64/VisualizerRls/bin/viscom.exe -nolock -quiet -jmem_size 1327536 lib.syscon_if_driver_task_tb -quiet -auto_acc_if_foreign -work lib -L vunit_lib -L lib -allow_unnamed -o _opt1 -id 1-94b6099a95f2-6abf19f6-28b-31f8
