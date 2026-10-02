@@ -42,18 +42,17 @@
   end
 
   // Config modport
-  modport sink (
-    input clk_en,
-    input clk,
-    input rst_n,
+  modport source(
+    output rst_n,
+    output clk_en,
+    output clk,
     import task disable_clock(),
-    import task enable_clock()
+    import task enable_clock(),
+    import task assert_rst(input int num_cycles)
   );
 
-  modport source(
+  modport sink (
+    input rst_n,
     input clk_en,
-    output clk,
-    output rst_n,
-    import task disable_clock(),
-    import task enable_clock()
+    input clk
   );
