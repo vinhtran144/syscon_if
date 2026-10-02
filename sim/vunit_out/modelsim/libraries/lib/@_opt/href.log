@@ -1,3 +1,0 @@
-BEGIN 3:syscon_if:fast__2:lib
-    clk_en :  1:syscon_if_driver_task_tb:fast:lib
-END 
