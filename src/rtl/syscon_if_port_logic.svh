@@ -54,5 +54,10 @@
   modport sink (
     input rst_n,
     input clk_en,
-    input clk
+    input clk,
+    import task measure_clk(
+    input  int  num_periods,
+    output real avg_period_ns,
+    output real duty_cycle_pct
+  )
   );

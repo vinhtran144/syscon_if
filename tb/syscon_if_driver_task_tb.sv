@@ -29,7 +29,7 @@ module syscon_if_driver_task_tb;
             syscon_src.disable_clock();
             `CHECK_EQUAL(syscon_src.clk_en, 1'b0, "Source modport failed to disable clock");
 
-            syscon_src.enable_clock();
+            //syscon_src.enable_clock();
         end
 
         `TEST_CASE("test_reset_assert") begin
@@ -45,9 +45,6 @@ module syscon_if_driver_task_tb;
 
                 // Thread 2: Test reset timing
                 begin
-                    // @(negedge syscon_inst.rst_n or posedge syscon_inst.clk);
-                    // `CHECK_EQUAL(syscon_inst.rst_n, 1'b0, "rst_n failed to assert before 1st cycle");
-                
                     @(posedge syscon_inst.clk);
                     `CHECK_EQUAL(syscon_inst.rst_n, 1'b0, "rst_n failed to assert before 1st cycle");
                     cycle_count = 1;
