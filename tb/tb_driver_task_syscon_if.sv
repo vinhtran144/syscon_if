@@ -2,7 +2,7 @@
 `include "vunit_defines.svh"
 
 
-module syscon_if_driver_task_tb;
+module tb_driver_task_syscon_if;
     localparam int  RESET_CYCLES = 5;
 
     syscon_if syscon_inst();
@@ -65,4 +65,4 @@ module syscon_if_driver_task_tb;
     end
 
     `WATCHDOG(1000ns);
-endmodule : syscon_if_driver_task_tb
+endmodule : tb_driver_task_syscon_if

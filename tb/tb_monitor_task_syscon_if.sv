@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 `include "vunit_defines.svh"
 
-module syscon_if_monitor_task_tb;
+module tb_monitor_task_syscon_if;
     syscon_if #(.PERIOD_NS(12.0), .DUTY_CYCLE (0.4)) syscon_inst ();
 
     virtual syscon_if #(.PERIOD_NS(12.0), .DUTY_CYCLE (0.4)).source syscon_src  = syscon_inst.source;
@@ -25,4 +25,4 @@ module syscon_if_monitor_task_tb;
         end
     end
     `WATCHDOG(1000ns);
-endmodule : syscon_if_monitor_task_tb
+endmodule : tb_monitor_task_syscon_if
